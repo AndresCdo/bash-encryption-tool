@@ -13,8 +13,8 @@ if command -v xxd &> /dev/null; then
 else
     # Install xxd
     echo "xxd is not installed. Installing..."
-    sudo apt-get update
-    sudo apt-get install vim
+    apt-get update
+    apt-get install vim
     echo "Installation complete."
 fi
 
