@@ -7,17 +7,6 @@ algorithm="aes-256-cbc"
 # Define iteration count
 iter=10000
 
-# Check if xxd is installed
-if command -v xxd &> /dev/null; then
-    echo "xxd is already installed."
-else
-    # Install xxd
-    echo "xxd is not installed. Installing..."
-    apt-get update
-    apt-get install vim
-    echo "Installation complete."
-fi
-
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 [-e|-d] folder_name" >&2
     exit 1
